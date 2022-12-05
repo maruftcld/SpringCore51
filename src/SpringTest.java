@@ -26,11 +26,14 @@ public class SpringTest {
         
         ApplicationContext ct = new ClassPathXmlApplicationContext("spring-context.xml");
         //Address addr = (Address) ct.getBean("addr");
-        Trainee trainee = (Trainee) ct.getBean("t121");
-        System.out.println(trainee);
+        //Trainee trainee = (Trainee) ct.getBean("t121");
+        //System.out.println(trainee);
         //ct.registerShutdownHook();
         //Trainee t = new Trainee(101);
         //InitAndDestroyBean ib = (InitAndDestroyBean) ct.getBean("ib");
         //ct.registerShutdownHook();
+        
+//        MyBeanPostProcessor xyz = (MyBeanPostProcessor) ct.getBean("postProcessor");
+//        xyz.toString();
     }
 }

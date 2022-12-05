@@ -96,10 +96,15 @@
          <constructor-arg value="baily road"></constructor-arg>
          <constructor-arg value="dhaka"></constructor-arg>
     </bean>
+    
+    <bean class="com.spring.test.MyBeanPostProcessor" id="postProcessor">
+    </bean>
 <!--    <bean class="com.spring.test.Trainee" id="traineeObjAuto" autowire="default">
          
     </bean>-->
 <!--    <bean class="com.spring.test.Trainee" id="traineeObjAuto">
          
     </bean>-->
+
+    
 </beans>
