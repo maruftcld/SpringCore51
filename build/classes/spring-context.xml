@@ -97,7 +97,11 @@
          <constructor-arg value="dhaka"></constructor-arg>
     </bean>
     
-    <bean class="com.spring.test.MyBeanPostProcessor" id="postProcessor">
+    
+    <bean class="com.spring.test.MyBeanPostProcessor" id="A" parent="">
+    </bean>
+    
+    <bean class="com.spring.test.MyBeanPostProcessor" id="B" parent="A">
     </bean>
 <!--    <bean class="com.spring.test.Trainee" id="traineeObjAuto" autowire="default">
          
@@ -106,5 +110,6 @@
          
     </bean>-->
 
+    
     
 </beans>
